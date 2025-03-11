@@ -1,112 +1,103 @@
-# Genetic Disorder Prediction: Enhancing Accuracy with Advanced Preprocessing and Model Optimization Techniques
+# 🧬 Genetic Disorder Prediction: Enhancing Accuracy with Advanced Preprocessing & Model Optimization Techniques 🚀
 
-## Project Overview
-Genetic disorders pose significant diagnostic challenges, often requiring costly genetic tests that may not be accessible in resource-limited areas. This project aims to improve the accuracy of genetic disorder prediction by leveraging advanced machine learning techniques, including:
-- Feature selection using Mutual Information (MI) scores and Recursive Feature Elimination (RFE)
-- Handling class imbalance using Synthetic Minority Over-sampling Technique (SMOTE)
-- Training multiple machine learning models including CatBoost, Random Forest, Logistic Regression, Neural Networks, XGBoost, AdaBoost, and K-Nearest Neighbors (KNN)
-- Hyperparameter tuning using Random Search and Optuna
+## 🌍 Project Overview
+Genetic disorders pose significant diagnostic challenges, often requiring costly genetic tests that may not be accessible in resource-limited areas. This project aims to improve the accuracy of genetic disorder prediction by leveraging advanced machine learning techniques.
 
-## Objectives
-- Develop an optimized machine learning model for genetic disorder prediction.
-- Evaluate the impact of feature selection techniques on model performance.
-- Address class imbalance using SMOTE and measure its effect on classification accuracy.
-- Improve model performance through hyperparameter tuning using Random Search and Optuna.
+#### 🔍 Distribution of Genetic Disorders 
+![image](https://github.com/user-attachments/assets/858938e9-2eb4-4890-b7bf-6f5f1d8c24b6)
+![image](https://github.com/user-attachments/assets/3749edbc-e2a4-4130-9487-d084283e3884)
 
-## Methodology
-1. **Data Collection & Preprocessing**
-   - Sourced patient demographic details, clinical symptoms, and genetic markers.
-   - Handled missing values, encoded categorical variables, and normalized numerical features.
+#### 🔬 Techniques Used
+🔹 **Feature selection** using Mutual Information (MI) scores, Feature Importance & Recursive Feature Elimination (RFE) 🎯  
+🔹 **Handling class imbalance** using Synthetic Minority Over-sampling Technique (SMOTE) ⚖️  
+🔹 **Training multiple machine learning models** 🤖 (Ensemble Model, CatBoost, Random Forest, Logistic Regression, Neural Networks, XGBoost, AdaBoost, KNN, SVM)  
+🔹 **Hyperparameter tuning** using Random Search & Optuna 🎛️  
 
-2. **Feature Selection**
-   - Mutual Information (MI) Score for identifying relevant predictors.
-   - Recursive Feature Elimination (RFE) for reducing dimensionality.
+## 🎯 Objectives
+✅ Develop an optimized machine learning model for genetic disorder prediction.  
+✅ Evaluate the impact of feature selection techniques on model performance.  
+✅ Address class imbalance using SMOTE and measure its effect on classification accuracy.  
+✅ Improve model performance through hyperparameter tuning using Random Search & Optuna.  
 
-3. **Class Imbalance Handling**
-   - Used SMOTE to generate synthetic samples for minority disorder classes.
+## 🔬 Methodology
+### 1️⃣ Data Collection & Preprocessing 📊
+📌 Sourced patient demographic details, clinical symptoms, and genetic markers.  
+📌 Handled missing values, encoded categorical variables, and normalized numerical features.  
 
-4. **Machine Learning Models**
-   - Implemented multiple models: CatBoost, Random Forest, Logistic Regression, Neural Networks, XGBoost, AdaBoost, and KNN.
+### 2️⃣ Feature Selection 🏆
+📌 **Mutual Information (MI) Score** for identifying relevant predictors.  
+📌 **Recursive Feature Elimination (RFE)** for reducing dimensionality.  
 
-5. **Hyperparameter Optimization**
-   - Random Search for exploring a wide range of hyperparameters.
-   - Optuna for fine-tuning using Bayesian optimization.
+### 3️⃣ Class Imbalance Handling ⚖️
+📌 Used **SMOTE** to generate synthetic samples for minority disorder classes.  
 
-6. **Performance Evaluation**
-   - Metrics: Accuracy, Precision, Recall, F1-score, Confusion Matrix, and ROC-AUC Score.
+### 4️⃣ Machine Learning Models 🤖
+📌 Implemented multiple models: **Ensemble Model (RF + CatBoost), CatBoost, Random Forest, Logistic Regression, Neural Networks, XGBoost, AdaBoost, KNN, and SVM**.  
 
-## Results & Discussion
-- Feature selection improved model efficiency and interpretability.
-- SMOTE mitigated class imbalance, enhancing detection of rare disorders.
-- Hyperparameter tuning significantly improved classification accuracy.
-- The best-performing model achieved the highest accuracy of **96%** and the highest AUC-ROC score.
+### 5️⃣ Hyperparameter Optimization 🎛️
+📌 **Random Search** for exploring a wide range of hyperparameters.  
+📌 **Optuna** for fine-tuning using Bayesian optimization.  
 
-### Model Performance Visualization
-![image](https://github.com/user-attachments/assets/3204e715-c1c1-4ebb-a9e6-e16c575f65e4)
+### 6️⃣ Performance Evaluation 📈
+📌 **Metrics:** Accuracy, Precision, Recall, F1-score, Confusion Matrix, and ROC-AUC Score.  
 
+## 🏆 Results & Discussion
+✨ Feature selection improved model efficiency and interpretability.  
+✨ SMOTE mitigated class imbalance, enhancing detection of rare disorders.  
+✨ Hyperparameter tuning significantly improved classification accuracy.  
+✨ The best-performing model, **Ensemble (RF + CatBoost), achieved 96.22% accuracy**.  
 
-#### Confusion Matrix
-![image](https://github.com/user-attachments/assets/0deea0db-779f-49b1-9d9b-45b52d1200e0)
-
-
-#### Feature Selection( MI- Score)
-![image](https://github.com/user-attachments/assets/09f5551a-a9fa-46f0-b026-9138a5b6a94b)
-
-
-#### Distribution of Genetic Disorders
-![image](https://github.com/user-attachments/assets/48ed95aa-3309-4efb-8472-a0397b0b560f)
-![image](https://github.com/user-attachments/assets/8b1d36b3-8a6e-46a6-b7ab-b80e7bc80c0d)
+### 📊 Model Performance Visualization
+#### 🔍 Model Comparison (Test Accuracy %)
+![image](https://github.com/user-attachments/assets/a5f24512-1c7e-4198-b174-16a3029111ed)
 
 
+#### 🔍 Confusion Matrix of the best Model
+![image](https://github.com/user-attachments/assets/0219363f-2119-4c0c-826c-2c3378430a27)
+  
+### 🔍 Feature Importance 
+![image](https://github.com/user-attachments/assets/433b0b9e-38e3-4a2c-a089-c5197871ce63)
 
-
-## Project Structure
-```
-├── dataset/                 # Processed dataset used for training
-├── models/                  # Trained machine learning models
-├── notebooks/               # Jupyter notebooks for exploratory analysis & training
-├── scripts/                 # Python scripts for preprocessing, training, and evaluation
-├── results/                 # Model evaluation reports and performance metrics
-├── images/                  # Visualizations and screenshots
-├── README.md                # Project documentation
-└── requirements.txt         # Required dependencies
+#### 🔍 MI Score
+![image](https://github.com/user-attachments/assets/08572f5a-2a5e-415d-884b-c0a9c22d6ec7)
+ 
 ```
 
-## Installation & Usage
-### Clone the Repository
+## 🚀 Installation & Usage
+### 📥 Clone the Repository
 ```bash
-git clone https://github.com/your-username/genetic-disorder-prediction.git
+git clone https://github.com/ezrayalley/genetic-disorder-prediction.git
 cd genetic-disorder-prediction
 ```
 
-### Install Dependencies
+### 📦 Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run the Preprocessing Script
+### 🔄 Run the Preprocessing Script
 ```bash
 python scripts/preprocessing.py
 ```
 
-### Train the Models
+### 🎯 Train the Models
 ```bash
 python scripts/train_models.py
 ```
 
-### Evaluate Model Performance
+### 📊 Evaluate Model Performance
 ```bash
 python scripts/evaluate.py
 ```
 
-## Future Work
-- Expand dataset with more diverse genetic data.
-- Integrate deep learning (CNNs, Transformers) for improved accuracy.
-- Develop a real-world clinical application for genetic disorder screening.
+## 🔮 Future Work
+✨ Expand dataset with more diverse genetic data.  
+✨ Integrate deep learning (CNNs, Transformers) for improved accuracy.  
+✨ Develop a real-world clinical application for genetic disorder screening.  
 
-## Citation
+## 📖 Citation
 If you use this work, please cite it as:
-```
+```bibtex
 @article{ezra2025,
   title={Genetic Disorder Prediction: Enhancing Accuracy through Advanced Preprocessing and Model Optimization Techniques},
   author={Ezra Yalley},
@@ -115,9 +106,9 @@ If you use this work, please cite it as:
 }
 ```
 
-## Contact
-Some files have been hidden.
-For any inquiries, collaboration or to get access to the full project files and codes, feel free to reach out:
+## 📬 Contact
+For inquiries, collaboration, or access to full project files and codes, feel free to reach out:  
 
-- **Email**: ezra.yalley@gmail.com
-- **GitHub**: [@ezrayalley](https://github.com/ezrayalley)
+📧 **Email**: ezra.yalley@gmail.com  
+🐙 **GitHub**: [@ezrayalley](https://github.com/ezrayalley)  
+
