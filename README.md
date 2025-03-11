@@ -116,6 +116,8 @@ If you use this work, please cite it as:
 ```
 
 ## Contact
-For any inquiries, collaboration or to get access to the full project and codes, feel free to reach out:
-Email: ezra.yalley@gmail.com  
-GitHub: [ezrayalley](https://github.com/ezrayalley)
+Some files have been hidden.
+For any inquiries, collaboration or to get access to the full project files and codes, feel free to reach out:
+
+- **Email**: ezra.yalley@gmail.com
+- **GitHub**: [@ezrayalley](https://github.com/ezrayalley)
